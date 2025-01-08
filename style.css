@@ -6,11 +6,19 @@ body {
     color: #333;
 }
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: #3b3b98;
     color: #fff;
     padding: 1rem 2rem;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 66px;
+}
+.info{
+    display: flex;
+    gap: 0.5rem;
 }
 header h1 {
     margin: 0;
@@ -41,6 +49,10 @@ nav a:hover {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#about img {
+    width: 30%;
+    border-radius: 15px;
 }
 h2 {
     color: #3b3b98;
