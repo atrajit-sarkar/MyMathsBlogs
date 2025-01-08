@@ -1,13 +1,14 @@
+@import "/BlogStyle.css";
 ## My tutorials for the world to see
 
 1. Maths
-     - [Analysis](AnalysisTutorial.html)
-     - [Algebra](AlgebraTutorial.html)
+     - [Analysis](Maths/Analysis/content.html)
+     - [Algebra](Maths/Algebra/content.html)
      - 
   
 2. Coding
-    - [Python](PythonTutorial.html)
-    - [C](CTutorial.html)
+    - [Python](Coding/Python/content.html)
+    - [C](Coding/C/content.html)
     - [Kotlin](Coding/Kotlin/content.html)
     - [Java](JavaTutorial.html)
     - [C++](C++Tutorial.html)

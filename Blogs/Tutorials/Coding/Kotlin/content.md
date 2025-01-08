@@ -1,3 +1,4 @@
+@import "/BlogStyle.css";
 ## Kotlin Language Tutorial
 
 1. App Development
