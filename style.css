@@ -19,6 +19,8 @@ header {
 .info{
     display: flex;
     gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
 }
 header h1 {
     margin: 0;
