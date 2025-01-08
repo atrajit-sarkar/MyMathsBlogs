@@ -1,6 +1,6 @@
+
 const blogs = [
     { title: 'Infinite Dimension Vector Spaces Anomaly', url: 'Blogs\\InfiniteDimensionVectorSpacesAnomaly\\content.html' },
-
 
 ];
 
