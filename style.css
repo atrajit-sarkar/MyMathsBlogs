@@ -1,0 +1,70 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+header {
+    background-color: #3b3b98;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+nav a {
+    text-decoration: none;
+    color: #bdbde4;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #ff6b6b;
+}
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+.about-section, .blog-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #3b3b98;
+}
+.blog-list {
+    list-style-type: none;
+    padding: 0;
+}
+.blog-list li {
+    margin: 0.5rem 0;
+}
+.blog-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.blog-list a:hover {
+    color: #ff6b6b;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #3b3b98;
+    color: #fff;
+    margin-top: 2rem;
+}
