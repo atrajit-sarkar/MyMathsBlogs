@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Blog</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/DarkThemes/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
@@ -15,14 +15,32 @@
 
 <body>
     <header>
-        <h1>My Maths Blog</h1>
+        <div id="hearder-content">
+            <h1>My Maths Blog</h1>
         <nav>
             <a href="#about">About Me</a>
             <a href="#blogs">Blog Pages</a>
             <a href="Blogs\Tutorials\content.html">Tutorials</a>
             <a href="Blogs\ChatGpt\content.html">ChatGpt</a>
-
         </nav>
+        </div>
+        <div id="themes">
+            <label for="theme-type">Choose Theme</label>
+            <select id="theme-type">
+                <option value="DarkDefault">DarkDefault</option>
+                <option value="DarkSunset">DarkSunset</option>
+                <option value="DarkMordernMinimal">DarkMordernMinimal</option>
+                <option value="Darkmonochrome">Darkmonochrome</option>
+                <option value="DarkEarthly">DarkEarthly</option>
+                <option value="DarkOceanBreeze">DarkOceanBreeze</option>
+                <option value="LightDefault">LightDefault</option>
+                <option value="LightSunset">LightSunset</option>
+                <option value="LightMordernMinimal">LightMordernMinimal</option>
+                <option value="Lightmonochrome">Lightmonochrome</option>
+                <option value="LightEarthly">LightEarthly</option>
+                <option value="LightOceanBreeze">LightOceanBreeze</option>
+            </select>
+        </div>               
     </header>
 
     <div class="container">
