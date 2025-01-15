@@ -83,4 +83,7 @@ at the top of the file.
 
 ### Examples of each of them
 Here below is the example of each format so that you feel how it looks exactly.
-- [Math Blog](/samples/mathblog.html)
+- [Math Blog](/samples/mathblog/mathblog.html)
+- [Coding Blog](/samples/codingblog/index.html)
+- [math+coding Blog](/samples/math+codingblog/math+coding.html)
+- [coding+math Blog](/samples/coding+mathBlog/index.html)
