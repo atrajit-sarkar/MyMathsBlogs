@@ -70,3 +70,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+const toggleSampleBlogs = document.querySelector(".sample-blogs")
+var isVisibleSampleList = false
+
+toggleSampleBlogs.addEventListener("click", () => {
+    isVisibleSampleList = !isVisibleSampleList
+    if (isVisibleSampleList) {
+        document.querySelector(".sampleList").style.display = "grid"
+        toggleSampleBlogs.setAttribute("class", "sample-blogs-visible")
+    } else {
+        document.querySelector(".sampleList").style.display = "none"
+        toggleSampleBlogs.removeAttribute("class", "sample-blogs-visible")
+        toggleSampleBlogs.setAttribute("class", "sample-blogs")
+    }
+})
+
+
