@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery App Building</title>
+    <title>About Collatz Conjecture</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
@@ -47,7 +47,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-ruby.min.js"></script> -->
 
     <!-- Prism.js for C syntax highlighting -->
-<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
 
     <!-- Prism.js for C++ syntax highlighting -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js"></script> -->
@@ -62,7 +62,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-swift.min.js"></script> -->
 
     <!-- Prism.js for Kotlin syntax highlighting -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-kotlin.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-kotlin.min.js"></script> -->
 
     <!-- Prism.js for TypeScript syntax highlighting -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script> -->
@@ -71,7 +71,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-sql.min.js"></script> -->
 
     <!-- Prism.js for Bash/Shell syntax highlighting -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
 
     <!-- Prism.js for JSON syntax highlighting -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script> -->
@@ -83,10 +83,8 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markdown.min.js"></script> -->
 
     <!-- Prism.js for XML syntax highlighting -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-xml-doc.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-xml-doc.min.js"></script> -->
 
-
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>
         MathJax = {
@@ -100,19 +98,37 @@
 
 
     <!-- Custom styles -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" id="17291729" data-theme="true" href="/styles/DarkThemes/earthly.css">
 
 </head>
 
 <body>
     <div class="title">
-        <p>Gallery App Building Guide</p>
+        <p>Collatz Conjecture</p>
+        <div id="themes">
+            <label for="theme-type">Choose Theme</label>
+            <select id="theme-type">
+                <option value="DarkDefault">DarkDefault</option>
+                <option value="DarkSunset">DarkSunset</option>
+                <option value="DarkMordernMinimal">DarkMordernMinimal</option>
+                <option value="Darkmonochrome">Darkmonochrome</option>
+                <option value="DarkEarthly">DarkEarthly</option>
+                <option value="DarkOceanBreeze">DarkOceanBreeze</option>
+                <option value="LightDefault">LightDefault</option>
+                <option value="LightSunset">LightSunset</option>
+                <option value="LightMordernMinimal">LightMordernMinimal</option>
+                <option value="Lightmonochrome">Lightmonochrome</option>
+                <option value="LightEarthly">LightEarthly</option>
+                <option value="LightOceanBreeze">LightOceanBreeze</option>
+            </select>
+        </div>
     </div>
     <div class="container">
         <div class="content md"></div>
     </div>
 
     <script src="script.js"></script>
+    <script src="themeSwticher.js"></script>
 
 
 </body>
