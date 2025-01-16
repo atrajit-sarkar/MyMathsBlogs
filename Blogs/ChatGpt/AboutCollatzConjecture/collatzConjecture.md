@@ -84,7 +84,7 @@ int main() {
 ---
 
 ## Sample Output
-```
+```bash
 Enter a positive integer: 6
 Collatz sequence starting with 6: 6 3 10 5 16 8 4 2 1
 ```

@@ -11,7 +11,7 @@ function applyTheme(theme) {
         LightOceanBreeze: "styles/LightThemes/oceanBreeze.css",
         DarkDefault: "styles/DarkThemes/style.css",
         DarkSunset: "styles/DarkThemes/sunset.css",
-        DarkMordernMinimal: "styles/DarkThemes/mordernminimal.css",
+        DarkMordernMinimal: "styles/DarkThemes/mordernMinimal.css",
         Darkmonochrome: "styles/DarkThemes/monochrome.css",
         DarkEarthly: "styles/DarkThemes/earthly.css",
         DarkOceanBreeze: "styles/DarkThemes/oceanBreeze.css"

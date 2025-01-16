@@ -50,18 +50,18 @@ function applyTheme(theme) {
     linkElement.href = themePath;
 
     // Save the selected theme in localStorage
-    localStorage.setItem('selectedTheme', theme);
+    localStorage.setItem('selectedHomeTheme', theme);
 }
 
 // Event listener for theme selection
 document.getElementById('theme-type').addEventListener('change', function () {
-    const selectedTheme = this.value;
-    applyTheme(selectedTheme);
+    const selectedHomeTheme = this.value;
+    applyTheme(selectedHomeTheme);
 });
 
 // On page load, apply the saved theme if available
 document.addEventListener('DOMContentLoaded', function () {
-    const savedTheme = localStorage.getItem('selectedTheme');
+    const savedTheme = localStorage.getItem('selectedHomeTheme');
 
     // Set the dropdown to the saved theme and apply it
     if (savedTheme) {
