@@ -1,5 +1,3 @@
-@import "/BlogStyle.css";
-
 ## ChatGPT: A Conversational AI Model
 ### Important Topics Discussion with OpenAI's ChatGPT
 
