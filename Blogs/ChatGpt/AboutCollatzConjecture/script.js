@@ -7,14 +7,14 @@ async function getmd() {
     let con = await res.text();
     document.getElementsByClassName("md")[0].innerHTML = marked.parse(con);
 
+    // Add copy buttons to code blocks after rendering
+    addCopyButtons();
+    
     // Apply Prism.js syntax highlighting after rendering
     Prism.highlightAll();
 
     // Render Equations
     MathJax.typeset();
-
-    // Add copy buttons to code blocks after rendering
-    addCopyButtons();
 }
 
 // Function to add copy buttons to all <pre><code> blocks
