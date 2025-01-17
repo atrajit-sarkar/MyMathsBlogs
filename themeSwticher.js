@@ -3,18 +3,18 @@
 function applyTheme(theme) {
     // Create a mapping of themes to their stylesheet paths
     const themePaths = {
-        LightDefault: "\BlogStyles\LightThemes\style.css",
-        LightSunset: "\BlogStyles\LightThemes\sunset.css",
-        LightMordernMinimal: "\BlogStyles\LightThemes\mordernminimal.css",
-        Lightmonochrome: "\BlogStyles\LightThemes\monochrome.css",
-        LightEarthly: "\BlogStyles\LightThemes\earthly.css",
-        LightOceanBreeze: "\BlogStyles\LightThemes\oceanBreeze.css",
-        DarkDefault: "\BlogStyles\DarkThemes\style.css",
-        DarkSunset: "\BlogStyles\DarkThemes\sunset.css",
-        DarkMordernMinimal: "\BlogStyles\DarkThemes\mordernMinimal.css",
-        Darkmonochrome: "\BlogStyles\DarkThemes\monochrome.css",
-        DarkEarthly: "\BlogStyles\DarkThemes\earthly.css",
-        DarkOceanBreeze: "\BlogStyles\DarkThemes\oceanBreeze.css"
+        LightDefault: "BlogStyles\\LightThemes\\style.css",
+        LightSunset: "BlogStyles\\LightThemes\\sunset.css",
+        LightMordernMinimal: "BlogStyles\\LightThemes\\mordernminimal.css",
+        Lightmonochrome: "BlogStyles\\LightThemes\\monochrome.css",
+        LightEarthly: "BlogStyles\\LightThemes\\earthly.css",
+        LightOceanBreeze: "BlogStyles\\LightThemes\\oceanBreeze.css",
+        DarkDefault: "BlogStyles\\DarkThemes\\style.css",
+        DarkSunset: "BlogStyles\\DarkThemes\\sunset.css",
+        DarkMordernMinimal: "BlogStyles\\DarkThemes\\mordernMinimal.css",
+        Darkmonochrome: "BlogStyles\\DarkThemes\\monochrome.css",
+        DarkEarthly: "BlogStyles\\DarkThemes\\earthly.css",
+        DarkOceanBreeze: "BlogStyles\\DarkThemes\\oceanBreeze.css"
     };
 
     // Get the correct path based on the selected theme
