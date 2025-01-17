@@ -3,18 +3,18 @@
 function applyTheme(theme) {
     // Create a mapping of themes to their stylesheet paths
     const themePaths = {
-        LightDefault: "MyMathsBlogs\\BlogStyles\\LightThemes\\style.css",
-        LightSunset: "MyMathsBlogs\\BlogStyles\\LightThemes\\sunset.css",
-        LightMordernMinimal: "MyMathsBlogs\\BlogStyles\\LightThemes\\mordernminimal.css",
-        Lightmonochrome: "MyMathsBlogs\\BlogStyles\\LightThemes\\monochrome.css",
-        LightEarthly: "MyMathsBlogs\\BlogStyles\\LightThemes\\earthly.css",
-        LightOceanBreeze: "MyMathsBlogs\\BlogStyles\\LightThemes\\oceanBreeze.css",
-        DarkDefault: "MyMathsBlogs\\BlogStyles\\DarkThemes\\style.css",
-        DarkSunset: "MyMathsBlogs\\BlogStyles\\DarkThemes\\sunset.css",
-        DarkMordernMinimal: "MyMathsBlogs\\BlogStyles\\DarkThemes\\mordernMinimal.css",
-        Darkmonochrome: "MyMathsBlogs\\BlogStyles\\DarkThemes\\monochrome.css",
-        DarkEarthly: "MyMathsBlogs\\BlogStyles\\DarkThemes\\earthly.css",
-        DarkOceanBreeze: "MyMathsBlogs\\BlogStyles\\DarkThemes\\oceanBreeze.css"
+        LightDefault: "\\MyMathsBlogs\\BlogStyles\\LightThemes\\style.css",
+        LightSunset: "\\MyMathsBlogs\\BlogStyles\\LightThemes\\sunset.css",
+        LightMordernMinimal: "\\MyMathsBlogs\\BlogStyles\\LightThemes\\mordernminimal.css",
+        Lightmonochrome: "\\MyMathsBlogs\\BlogStyles\\LightThemes\\monochrome.css",
+        LightEarthly: "\\MyMathsBlogs\\BlogStyles\\LightThemes\\earthly.css",
+        LightOceanBreeze: "\\MyMathsBlogs\\BlogStyles\\LightThemes\\oceanBreeze.css",
+        DarkDefault: "\\MyMathsBlogs\\BlogStyles\\DarkThemes\\style.css",
+        DarkSunset: "\\MyMathsBlogs\\BlogStyles\\DarkThemes\\sunset.css",
+        DarkMordernMinimal: "\\MyMathsBlogs\\BlogStyles\\DarkThemes\\mordernMinimal.css",
+        Darkmonochrome: "\\MyMathsBlogs\\BlogStyles\\DarkThemes\\monochrome.css",
+        DarkEarthly: "\\MyMathsBlogs\\BlogStyles\\DarkThemes\\earthly.css",
+        DarkOceanBreeze: "\\MyMathsBlogs\\BlogStyles\\DarkThemes\\oceanBreeze.css"
     };
 
     // Get the correct path based on the selected theme
