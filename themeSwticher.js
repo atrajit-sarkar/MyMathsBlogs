@@ -52,3 +52,25 @@ document.addEventListener('DOMContentLoaded', function () {
         applyTheme(savedTheme);
     }
 });
+
+
+// Get the font dropdown element
+const fontDropdown = document.getElementById("font-type");
+
+// Load the saved font from localStorage on page load
+window.addEventListener("DOMContentLoaded", function () {
+    const savedFont = localStorage.getItem("selectedFont");
+    if (savedFont) {
+        document.body.style.fontFamily = savedFont; // Apply the saved font to the body
+        fontDropdown.value = savedFont; // Set the dropdown to the saved value
+    }
+});
+
+// Update font style and save the selection to localStorage
+fontDropdown.addEventListener("change", function () {
+    const selectedFont = this.value;
+    document.body.style.fontFamily = selectedFont; // Change the font of the body
+    localStorage.setItem("selectedFont", selectedFont); // Save the selected font to localStorage
+});
+
+

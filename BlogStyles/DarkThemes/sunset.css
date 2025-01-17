@@ -106,6 +106,62 @@ body {
     border-color: #888;
     /* Highlights border on focus */
 }
+
+#fonts {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    /* Space between labels and dropdowns */
+    position: absolute;
+    left: 2rem;
+    /* Adjust distance from the right edge of the header */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#fonts label {
+    font-size: 0.9rem;
+    /* Slightly smaller for modern aesthetics */
+    color: #fff;
+    /* Matches the header text color */
+    font-weight: 500;
+    /* Adds some weight for prominence */
+}
+
+#fonts select {
+    background-color: #2b2b2b;
+    /* Dark background for dropdown */
+    color: #fff;
+    /* White text for contrast */
+    border: 1px solid #444;
+    /* Subtle border to separate dropdown */
+    border-radius: 4px;
+    /* Rounded corners */
+    padding: 0.4rem 0.8rem;
+    /* Comfortable padding for interaction */
+    font-size: 0.9rem;
+    /* Matches label size */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Smooth hover animation */
+}
+
+#fonts select:hover {
+    background-color: #3c3c3c;
+    /* Slightly lighter background on hover */
+    border-color: #666;
+    /* Subtle color change on hover */
+}
+
+#fonts select:focus {
+    outline: none;
+    /* Removes default outline */
+    box-shadow: 0 0 4px #aaa;
+    /* Subtle focus ring for accessibility */
+    border-color: #888;
+    /* Highlights border on focus */
+}
+
 .note {
     color: red;
     font-weight: bold;
@@ -195,7 +251,8 @@ mjx-container[display="true"] {
 
 mjx-container[display="true"]:hover::-webkit-scrollbar,
 mjx-container[display="true"]:active::-webkit-scrollbar {
-    opacity: 1; /* Show scrollbar on hover or active scroll */
+    opacity: 1;
+    /* Show scrollbar on hover or active scroll */
 }
 
 
