@@ -13,7 +13,9 @@ body {
     font-weight: 400;
     font-size: 24px;
     font-style: normal;
-    background-color: #1d1e1e;
+    background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+    color: #dcdcdc;
+    transition: background-color 0.3s ease, color 0.3s ease;
     gap: 10px;
 }
 
@@ -25,7 +27,8 @@ body {
     /* Make the title sticky */
     top: 0;
     /* Sets the top position when sticky */
-    background-color: rgb(45, 44, 44);
+    background-color: #1f1f1f;
+    transition: background-color 0.3s ease;
     /* Background color */
     width: 100%;
     /* Full width */
@@ -44,8 +47,9 @@ body {
     padding-top: 7px;
     /* Padding on top */
     animation: glow 1.5s infinite alternate;
+    transition: font-size 0.3s ease;
     font-size: 40px;
-
+    color: #f0f0f0;
 }
 
 #themes {
@@ -63,13 +67,68 @@ body {
 #themes label {
     font-size: 0.9rem;
     /* Slightly smaller for modern aesthetics */
-    color: #fff;
+    color: #dcdcdc;
     /* Matches the header text color */
     font-weight: 500;
     /* Adds some weight for prominence */
 }
 
 #themes select {
+    background-color: #1f1f1f;
+    /* Dark background for dropdown */
+    color: #dcdcdc;
+    /* White text for contrast */
+    border: 1px solid #444;
+    /* Subtle border to separate dropdown */
+    border-radius: 4px;
+    /* Rounded corners */
+    padding: 0.4rem 0.8rem;
+    /* Comfortable padding for interaction */
+    font-size: 0.9rem;
+    /* Matches label size */
+    cursor: pointer;
+    transition: all 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    /* Smooth hover animation */
+}
+
+#themes select:hover {
+    background-color: #2a2a2a;
+    /* Slightly lighter background on hover */
+    border-color: #666;
+    /* Subtle color change on hover */
+}
+
+#themes select:focus {
+    outline: none;
+    /* Removes default outline */
+    box-shadow: 0 0 4px #888;
+    /* Subtle focus ring for accessibility */
+    border-color: #888;
+    /* Highlights border on focus */
+}
+
+#fonts {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    /* Space between labels and dropdowns */
+    position: absolute;
+    left: 2rem;
+    /* Adjust distance from the right edge of the header */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#fonts label {
+    font-size: 0.9rem;
+    /* Slightly smaller for modern aesthetics */
+    color: #fff;
+    /* Matches the header text color */
+    font-weight: 500;
+    /* Adds some weight for prominence */
+}
+
+#fonts select {
     background-color: #2b2b2b;
     /* Dark background for dropdown */
     color: #fff;
@@ -87,14 +146,14 @@ body {
     /* Smooth hover animation */
 }
 
-#themes select:hover {
+#fonts select:hover {
     background-color: #3c3c3c;
     /* Slightly lighter background on hover */
     border-color: #666;
     /* Subtle color change on hover */
 }
 
-#themes select:focus {
+#fonts select:focus {
     outline: none;
     /* Removes default outline */
     box-shadow: 0 0 4px #aaa;
@@ -115,6 +174,9 @@ mjx-container[display="true"] {
     /* Adjust spacing around equations */
     word-wrap: break-word;
     /* Force long equations to wrap */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
 }
 
 
@@ -135,8 +197,7 @@ mjx-container[display="true"] {
     /* Subtle border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     /* Soft shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Smooth transition for hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 
     overflow-x: auto;
     white-space: nowrap;
@@ -159,7 +220,7 @@ mjx-container[display="true"]::-webkit-scrollbar {
 }
 
 mjx-container[display="true"]::-webkit-scrollbar-thumb {
-    background: #95a5a6;
+    background: #888;
     /* Scrollbar color */
     border-radius: 4px;
     /* Rounded scrollbar */
@@ -168,7 +229,7 @@ mjx-container[display="true"]::-webkit-scrollbar-thumb {
 }
 
 mjx-container[display="true"]::-webkit-scrollbar-thumb:hover {
-    background: #ecf0f1;
+    background: #bbb;
     /* Lighter color on hover */
 }
 
@@ -225,19 +286,17 @@ mjx-container[display="true"] {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     /* Consistent shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Smooth transition for hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 /* Hover Effect */
 mjx-container[display="true"]:hover,
-/* align:hover, */
 mjx-container[display="true"]:hover {
     transform: translateY(-5px);
     /* Subtle lift effect */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
     /* Increased shadow on hover */
-    background-color: #3b4a5a;
+    background-color: #333;
     /* Slight color change on hover */
 }
 
@@ -383,7 +442,7 @@ mjx-container[display="true"] {
 }
 
 .content {
-    background-color: #0d0d16;
+    background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
     color: aliceblue;
     padding: 30px;
     border-radius: 8px;
@@ -415,86 +474,92 @@ h6 {
 }
 
 h1 {
-    color: rgb(101, 49, 222);
+    color: #e57373;
     font-family: "Vast Shadow", serif;
     font-weight: 400;
     font-style: normal;
 }
 
 h1:hover {
-    background-color: rgb(52, 51, 51);
+    background-color: #333;
     padding: 7px;
     border-radius: 5px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
     /* width: fit-content; */
 }
 
 h2 {
-    color: rgb(65, 207, 212);
+    color: #81c784;
     font-family: "Vast Shadow", serif;
     font-weight: 400;
     font-style: normal;
 }
 
 h2:hover {
-    background-color: rgb(136, 134, 134);
+    background-color: #333;
     padding: 7px;
     border-radius: 5px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
     /* width: fit-content; */
 }
 
 h3 {
-    color: rgb(235, 145, 222);
+    color: #ffb74d;
     font-family: "Vast Shadow", serif;
     font-weight: 400;
     font-style: normal;
 }
 
 h3:hover {
-    background-color: rgb(136, 134, 134);
+    background-color: #333;
     padding: 7px;
     border-radius: 5px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
     /* width: fit-content; */
 }
 
 h4 {
-    color: rgb(231, 156, 172);
+    color: #4fc3f7;
     font-family: "Vast Shadow", serif;
     font-weight: 400;
     font-style: normal;
 }
 
 h4:hover {
-    background-color: rgb(136, 134, 134);
+    background-color: #333;
     padding: 7px;
     border-radius: 5px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
     /* width: fit-content; */
 }
 
 h5 {
-    color: rgb(240, 168, 208);
+    color: #f06292;
     font-family: "Vast Shadow", serif;
     font-weight: 400;
     font-style: normal;
 }
 
 h5:hover {
-    background-color: rgb(136, 134, 134);
+    background-color: #333;
     padding: 7px;
     border-radius: 5px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
     /* width: fit-content; */
 }
 
 h6 {
-    color: rgb(186, 187, 183);
+    color: #b0bec5;
     font-family: "Vast Shadow", serif;
     font-weight: 400;
     font-style: normal;
 }
 
 h6:hover {
-    background-color: rgb(136, 134, 134);
+    background-color: #333;
     padding: 7px;
     border-radius: 5px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
     /* width: fit-content; */
 }
 
@@ -505,7 +570,7 @@ strong {
 }
 
 strong:hover {
-    background-color: rgb(50, 205, 89);
+    background-color: yellowgreen;
     padding: 5px;
     border-radius: 5px;
     transition: background-color 0.3s ease, padding 0.3s ease;
@@ -513,8 +578,8 @@ strong:hover {
 
 pre {
     display: flex;
-    background-color: #282c34 !important;
-    color: #e8caca !important;
+    background-color: #1e1e1e !important;
+    color: #dcdcdc !important;
     padding: 15px;
     border-radius: 8px;
     position: relative;
@@ -522,10 +587,12 @@ pre {
     /* max-height: 400px; */
     overflow: auto;
     justify-content: space-between;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 pre:hover {
     animation: shake 0.5s ease-in-out;
+    transition: animation 0.3s ease;
 }
 
 code {
@@ -540,12 +607,13 @@ code {
 
 /* Styles for inline code */
 code:not([class*="language-"]) {
-    background-color: #2c2c2c;
-    color: rgb(255, 255, 255);
+    background-color: #2a2a2a;
+    color: #dcdcdc;
     padding: 2px 4px;
     border-radius: 4px;
     font-weight: bold;
     font-size: 24px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .copy-button {
@@ -554,7 +622,7 @@ code:not([class*="language-"]) {
     top: 0px;
     right: 0px;
     background-color: transparent;
-    color: rgb(239, 240, 210);
+    color: white;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
@@ -575,17 +643,19 @@ code:not([class*="language-"]) {
 
 .copy-button:active {
     transform: scale(0.9);
+    transition: transform 0.3s ease;
 }
 
 .copied::after {
     content: "Copied!";
     font-size: 0.9rem;
-    color: #27a645;
+    color: #28a745;
     position: absolute;
     right: 40px;
     top: 3px;
     opacity: 1;
     animation: fadeout 2.3s forwards;
+    transition: opacity 0.3s ease;
 }
 
 @keyframes fadeout {
@@ -648,6 +718,7 @@ code:not([class*="language-"]) {
         /* Allow horizontal scrolling if necessary */
         font-size: 7px;
         /* Smaller font size for code */
+        transition: font-size 0.3s ease;
     }
 
     code:not([class*="language-"]) {
@@ -673,6 +744,7 @@ code:not([class*="language-"]) {
     .content {
         font-size: 10px;
         /* Reduce font size in content */
+        transition: font-size 0.3s ease;
     }
 }
 
