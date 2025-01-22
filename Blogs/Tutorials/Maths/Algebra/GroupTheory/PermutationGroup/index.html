@@ -89,12 +89,12 @@
     <script>
         MathJax = {
             tex: {
-                packages: { '[+]': ['base', 'ams', 'color'] }, // Ensure required packages are included
-                inlineMath: [['$', '$'], ['\\(', '\\)']], // Inline math delimiters
-                displayMath: [['$$', '$$'], ['\\[', '\\]']], // Display math delimiters
+            packages: { '[+]': ['base', 'ams', 'color'] }, // Ensure required packages are included
+            inlineMath: [['$', '$'], ['\\(', '\\)']], // Inline math delimiters
+            displayMath: [['$$', '$$'], ['\\[', '\\]']], // Display math delimiters
             },
             loader: {
-                load: ['[tex]/color', '[tex]/ams'] // Load color and AMS packages
+            load: ['[tex]/color', '[tex]/ams'] // Load color, AMS, and ticz packages
             },
         };
     </script>
@@ -117,13 +117,14 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
         p img {
-            max-width: 50%;
+            max-width: 25%;
             height: auto;
             display: block;
             margin: 20px auto;
             border: 2px solid #ddd;
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            mix-blend-mode: multiply;
         }
     </style>
 

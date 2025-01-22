@@ -16,6 +16,7 @@ To, show the 1. point, notice the followingdiagram:
 
 **1.**
 diagram:
+![arrowDiagram](image.png)
 
 Now, notice that $f,g \in S_X$, then 
 $$
