@@ -28,7 +28,7 @@ $$
 $$
 
 Thus $f\circ g$ is a 1-1 fucntion from $X$ to $X$.
-Now, take $y\in X$,then we have a $x_1\in X$ such that $f(x_1)=y$ as $f \in S_X$ and $f$ is hence onto function and as $x_1\in X$ hence $\exist x \in X$ such that $g(x)=x_1$ as $g\in S_X$ and $g$ is onto function. Hence, together we get 
+Now, take $y\in X$,then we have a $x_1\in X$ such that $f(x_1)=y$ as $f \in S_X$ and $f$ is hence onto function and as $x_1\in X$ hence $\exists x \in X$ such that $g(x)=x_1$ as $g\in S_X$ and $g$ is onto function. Hence, together we get 
 $f(g(x))=y$, hence $f\circ g$ is onto meaning, $f\circ g$ is a bijection from $X$ to $X$ and hence $f\circ g \in S_X$.
 
 **2.** There is a function called identity fucntion from $X$ to $X$ which is defined as $e(x)=x$ for all $x\in X$. This function is a bijection from $X$ to $X$ and hence $e\in S_X$.
