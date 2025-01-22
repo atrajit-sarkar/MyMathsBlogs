@@ -14,4 +14,5 @@ Corresponidng matrix of $C$ is $$\begin{bmatrix} 0 & -1 \\\\ 1 & 0 \end{bmatrix}
 Now, $C\circ B\circ A\circ \phi(0)=0$ and $C\circ B\circ A\circ \phi(\infty)=\infty$ and $C\circ B\circ A\circ \phi(i)=i$ and hence $C\circ B\circ A\circ \phi(I)=I$.
 
 ##### Reason:
+$d_{\mathbb{H^2}}(i,\psi(ai))+d_{\mathbb{H^2}}(\psi(ai),O)\geq d_{\mathbb{H^2}}(i,O)$(By triangle inequality). But notice that by isometry we have $d_{\mathbb{H^2}}(ai,i)=d_{\mathbb{H^2}}(i,\psi(ai))$ and $d_{\mathbb{H^2}}(ai,O)=d_{\mathbb{H^2}}(\psi(ai),O)$ but as $O,i,ai$ lies on geodesic viz. the imaginary axis, we have $d_{\mathbb{H^2}}(i,O)=d_{\mathbb{H^2}}(i,ai)+d_{\mathbb{H^2}}(ai,O)$ and hence $d_{\mathbb{H^2}}(i,\psi(ai))+d_{\mathbb{H^2}}(\psi(ai),O)=d_{\mathbb{H^2}}(i,O)$. But then we have two geodesics viz. circular arc from $i \text{ to }\psi(ai)$ and  from $\psi(ai)\text{ to }O$. Joining these two geodesics we get a piece-wise differentiable curve from $i$ to $O$. So, length of this curve is $d_{\mathbb{H^2}}(i,\psi(ai))+d_{\mathbb{H^2}}(\psi(ai),O) > d_{\mathbb{H^2}}(i,O)$ a contradiction. Hence $i,O,ai$ lies on the Imaginary axis.
 ![](reason.jpg)
