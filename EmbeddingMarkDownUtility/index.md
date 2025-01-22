@@ -1,3 +1,6 @@
+title: About Collatz Conjecture
+content-title: Collatz Conjecture
+
 # Exploring the Collatz Conjecture: A Mathematical Puzzle with Code Implementation
 
 The **Collatz Conjecture**, also known as the **3x + 1 problem**, is a fascinating yet unsolved problem in mathematics. Despite its simplicity, it has intrigued mathematicians and enthusiasts for decades. Let's explore this intriguing problem and implement its solution in C programming.
