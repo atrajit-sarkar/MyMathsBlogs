@@ -8,7 +8,7 @@ Hence $B\circ A\circ \phi$ is a continuous map from $\mathbb{H^2}$ to $\mathbb{H
 Now, consider a map $C(z)=-\frac{1}{z}$, this map is an isometry of $\mathbb{H^2}$.
 
 ##### Reason:
-Corresponidng matrix of $C$ is $\begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}$ which is in $PSL(2,\mathbb{R})$ and hence $C\in \operatorname{Isom}(\mathbb{H^2})$.
+Corresponidng matrix of $C$ is $$\begin{bmatrix} 0 & -1 \\\\ 1 & 0 \end{bmatrix}$$ which is in $PSL(2,\mathbb{R})$ and hence $C\in \operatorname{Isom}(\mathbb{H^2})$.
 
 ---
 Now, $C\circ B\circ A\circ \phi(0)=0$ and $C\circ B\circ A\circ \phi(\infty)=\infty$ and $C\circ B\circ A\circ \phi(i)=i$ and hence $C\circ B\circ A\circ \phi(I)=I$.
