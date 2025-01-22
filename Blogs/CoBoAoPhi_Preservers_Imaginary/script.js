@@ -1,54 +1,75 @@
-// Paste the link of your mark down file here to render it into your site
-const myMarkDownFile="index.md";
+// Configure marked.js
+marked.setOptions({
+    gfm: true, // Enable GitHub-Flavored Markdown
+    breaks: true, // Enable line breaks for better readability
+    smartypants: false, // Disable automatic replacement of quotes and dashes
+    renderer: new marked.Renderer(), // Use the default renderer
+});
 
-// Fetch the Markdown file and render it
+// Path to your Markdown file
+const myMarkDownFile = "index.md";
+
+// Fetch and render the Markdown file
 async function getmd() {
-    let res = await fetch(myMarkDownFile);
-    let con = await res.text();
-    document.getElementsByClassName("md")[0].innerHTML = marked.parse(con);
+    try {
+        // Fetch the Markdown file
+        const response = await fetch(myMarkDownFile);
 
-    // Add copy buttons to code blocks after rendering
-    addCopyButtons();
-    
-    // Apply Prism.js syntax highlighting after rendering
-    Prism.highlightAll();
+        if (!response.ok) {
+            throw new Error(`Failed to fetch markdown file: ${response.statusText}`);
+        }
 
-    // Render Equations
-    MathJax.typeset();
+        const markdownContent = await response.text();
+
+        // Render Markdown using marked.js
+        const mdContainer = document.querySelector(".md");
+        mdContainer.innerHTML = marked.parse(markdownContent);
+
+        // Add copy buttons to code blocks
+        addCopyButtons();
+
+        // Apply Prism.js syntax highlighting
+        Prism.highlightAll();
+
+        // Trigger MathJax to typeset the new content
+        await MathJax.typesetPromise([mdContainer]);
+    } catch (error) {
+        console.error("Error fetching or rendering markdown:", error);
+    }
 }
 
-// Function to add copy buttons to all <pre><code> blocks
+// Function to add copy buttons to <pre><code> blocks
 function addCopyButtons() {
-    const codeBlocks = document.querySelectorAll('pre');
+    const codeBlocks = document.querySelectorAll("pre");
 
-    codeBlocks.forEach((block, index) => {
-        // Create a copy button element
-        const button = document.createElement('button');
+    codeBlocks.forEach((block) => {
+        // Create a copy button
+        const button = document.createElement("button");
         button.className = "copy-button";
-        button.innerHTML = '<i class="fas fa-clipboard"></i>'; // Use Font Awesome icon for the button
+        button.innerHTML = '<i class="fas fa-clipboard"></i>'; // Font Awesome icon for copy button
 
         // Append the button to the code block
         block.appendChild(button);
 
-        // Add click event to the button for copying the text
-        button.addEventListener('click', () => {
+        // Add click event to copy the code block content
+        button.addEventListener("click", () => {
             copyCode(block, button);
         });
     });
 }
 
-// Function to copy the code block content
+// Function to copy the code block content to the clipboard
 function copyCode(block, button) {
-    const code = block.querySelector('code').innerText;
+    const code = block.querySelector("code").innerText;
 
-    // Copy the code to the clipboard
-    navigator.clipboard.writeText(code).then(() => {
-        // Add copied class for animation
-        button.classList.add('copied');
-        setTimeout(() => {
-            button.classList.remove('copied');
-        }, 1000);
-    });
+    // Copy to clipboard and provide feedback
+    navigator.clipboard
+        .writeText(code)
+        .then(() => {
+            button.classList.add("copied");
+            setTimeout(() => button.classList.remove("copied"), 1000);
+        })
+        .catch((err) => console.error("Failed to copy code:", err));
 }
 
 // Call the function to fetch and render the markdown
