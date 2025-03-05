@@ -2,6 +2,7 @@
 const blogs = [
     { title: 'Infinite Dimension Vector Spaces Anomaly', url: 'Blogs\\InfiniteDimensionVectorSpacesAnomaly\\index.html' },
     { title: 'CoBoAoPhi Preserves Imaginary Axis Pointwise', url: 'Blogs\\CoBoAoPhi_Preservers_Imaginary\\index.html' },
+    { title: 'My Works', url: 'https://mymathworld.gongobongo.org/' },
 
 ];
 
