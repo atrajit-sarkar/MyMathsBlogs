@@ -11,7 +11,7 @@ function applyTheme(theme) {
         LightOceanBreeze: "\\MyMathsBlogs\\BlogStyles\\LightThemes\\oceanBreeze.css",
         DarkDefault: "\\MyMathsBlogs\\BlogStyles\\DarkThemes\\style.css",
         DarkSunset: "\\MyMathsBlogs\\BlogStyles\\DarkThemes\\sunset.css",
-        DarkMordernMinimal: "\\MyMathsBlogs\\BlogStyles\\DarkThemes\\mordernMinimal.css",
+        DarkMordernMinimal: "\\BlogStyles\\DarkThemes\\mordernMinimal.css",
         Darkmonochrome: "\\MyMathsBlogs\\BlogStyles\\DarkThemes\\monochrome.css",
         DarkEarthly: "\\MyMathsBlogs\\BlogStyles\\DarkThemes\\earthly.css",
         DarkOceanBreeze: "\\MyMathsBlogs\\BlogStyles\\DarkThemes\\oceanBreeze.css"
