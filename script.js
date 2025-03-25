@@ -4,6 +4,7 @@ const blogs = [
     { title: 'CoBoAoPhi Preserves Imaginary Axis Pointwise', url: 'Blogs\\CoBoAoPhi_Preservers_Imaginary\\index.html' },
     { title: 'My Works', url: 'https://mymathworld.gongobongo.org/' },
     { title: 'Github Codespace RDP', url: 'Blogs\\GitHubCodeSpaceRDP\\index.html' },
+    { title: 'Free Domain', url: 'Blogs\\FreeDomain\\index.html' },
 
 ];
 
