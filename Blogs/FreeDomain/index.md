@@ -1,9 +1,9 @@
 # Video Topics:
-1. Want to get free domain
-2. Want to set up testing business startup for free
-3. Want to see how dns and domains works for a business 
+1. [Want to get free domain](https://dnsexit.com/)
+2. [Want to set up testing business startup emails for free](https://www.zoho.com/mail/)
+3. [Want to see how dns and domains works for a business](https://github.com/) 
 4. Want to feel how admins feels as a workspace.
-5. Want to create Google workspace account for 14 days for free 
+5. [Want to create Google workspace account for 14 days for free](https://workspace.google.com/intl/en_in/) 
 
 And many more in a single video I will explain not in details but will give you the idea. 
 Stay tuned!
